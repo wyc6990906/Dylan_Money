@@ -10,7 +10,7 @@ const Home = () => {
   // should be 'transactions' but make mistake when create it
   const {documents, error} = useCollection('transaction',
     ["uid", "==", user.uid],
-    ['createdAt','desc'])
+    ['createdAt', 'desc'])
   return (
     <div className={styles.container}>
       <div className={styles.content}>
